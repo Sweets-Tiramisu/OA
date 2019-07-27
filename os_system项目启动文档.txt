@@ -1,0 +1,16 @@
+注意：先阅读一遍oa_system目录下的README.md
+项目启动步骤：
+	1.数据库配置：在mysql数据库中，创建oasys数据库，导入tr18lx.sql
+	2.把项目作为maven项目导入到idea/eclipse
+	3.修改项目目录oa_system\src\main\resources\application.properties中的数据库用户名和密码
+	4.运行oa_system\src\main\java\cn\gson\oasys目录下的OasysApplication.java中main方法即可
+	5.console出现如下内容说明项目启动成功：
+		http://www.network-science.de/ascii/
+		https://www.degraeve.com/img2txt.php
+		......................
+		......................此处省略好多行
+		2019-02-18 20:34:23.616  INFO 1488 --- [           main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+		2019-02-18 20:34:23.838  INFO 1488 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+		2019-02-18 20:34:23.951  INFO 1488 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8088 (http)
+		2019-02-18 20:34:23.957  INFO 1488 --- [           main] cn.gson.oasys.OasysApplication           : Started OasysApplication in 13.154 seconds (JVM running for 13.768)
+	6.浏览器输入 http://localhost:8088 访问项目    用户名：soli  密码：123456
